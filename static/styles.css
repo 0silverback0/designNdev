@@ -1,0 +1,102 @@
+body{
+    background-color: black;
+}
+
+.row{
+    margin: 0;
+}
+/* variables */
+
+:root{
+    --dnd-blue: #0cc0df;
+}
+
+/* HEADER */
+
+header{
+    background-color: black;
+    width: 100%;
+}
+
+h1{
+    text-shadow: 0 0 10px white;
+	animation: strobe 2.5s infinite;
+    color: white;
+    font-size: 24px;
+}
+
+.hamburger{
+    color: white;
+}
+
+.hamburger-items{
+    color: var(--dnd-blue);
+}
+
+/* CALL TO ACTION */
+
+#call-to-action{
+    background-color: var(--dnd-blue);
+    color: white;
+}
+
+/* SECTION  1 */
+.info{
+    background-color: black;
+    color: var(--dnd-blue);
+    /* height: 200px; */
+    width: 100%;
+}
+
+/* .webdev-info{
+    color: var(--dnd-blue)
+} */
+
+.img-test{
+    padding: 0;
+}
+
+.btn{
+    background-color: var(--dnd-blue);
+}
+
+a{
+    text-decoration: none;
+}
+/* #services{
+    background-color: var(--dnd-blue);
+    width: 100%;
+} */
+
+h2{
+    color: #58595b;
+}
+
+/* HEADER ANIMATION */
+
+@keyframes strobe {
+    0% {
+        text-shadow: 0 0 10px white;
+    }
+    50% {
+        text-shadow: 0 0 20px var(--dnd-blue);
+    }
+    100% {
+        text-shadow: 0 0 10px white;
+    }
+}
+
+/* FORM */
+
+form{
+    background-color: var(--dnd-blue);
+}
+
+form label{
+    color: white;
+}
+/* FOOTER */
+
+footer{
+    color: white;
+}
