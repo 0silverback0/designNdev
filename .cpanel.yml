@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/designnd/public_html
+    - export DEPLOYPATH=/home/designnd/DesignNDev
     - /bin/cp -R * $DEPLOYPATH
