@@ -22,11 +22,11 @@
                 </button>
             </div> 
            <div class="hamburger-items ">
-               <ul class="text-center">
-                   <li>Blog</li>
-                   <li>Web Services</li>
-                   <li>Mentoring</li>
-                   <li>Certificates</li>
+               <ul class="text-center list-unstyled">
+                   <!-- <li>Blog</li> -->
+                   <li><a href="/portfolio"> Portoflio </a></li>
+                   <li><a href="/about"> About</a></li>
+                   <li></li>
                </ul>
            </div>
           </div>
@@ -35,12 +35,13 @@
     <!-- END MODAL -->
 
     <header class="">
-        <h1 class="d-inline">DesignNDev.com</h1>
+        <h1 class="d-inline"><a href="/">DesignNDev.com</a> </h1>
         <i class="m-2 hamburger fa-solid fa-bars float-right"></i>
     </header>
 
+    {% block content %}
     <!-- CALL TO ACTION -->
-    <section  id="call-to-action" class="text-center mx-auto">
+    <section  id="call-to-action" class="text-center mx-auto rounded">
         <p class="m-3 p-2">
             If you're a business owner with only a Facebook presence or a professional without a website, it's time to take action!
             Having a strong online presence is crucial for reaching your target audience and growing your business or professional
@@ -56,41 +57,41 @@
 
     <section id="web-services" class="info text-center">
 
-        <img src="../static/Images/webservices.svg" class="float-left col-md-6"  width="100%" alt="web development graphic">
+        <img src="../static/Images/webservices.svg" class="col-md-6 image-fluid mx-auto"  width="100%" alt="web development graphic">
                 
-         <div class="dev-info float-right col-md-6">
-            <h4 class="mt-2">Website Development</h4>
-            <p class="">
+         <div class="dev-info d-md-float-right d-lg-inline">
+            <h4 class="">Website Development</h4>
+            <p class="m-4">
                 Using the latest web development technologies and best practices, I bring your website design to life with clean,
                 efficient code that ensures optimal performance and functionality. I create responsive, mobile-friendly websites that
                 look great on any device and deliver an exceptional user experience.
             </p>
 
-            <h4 class="m-3">Website Maintenance</h4>
+            <h4 class="">Website Maintenance</h4>
             <p class="m-3">
                 After your website is launched, I offer ongoing website maintenance and support to ensure that it remains up-to-date,
                 secure, and optimized for search engines. From regular backups and software updates to performance optimization and
                 security monitoring, I take care of the technical details so you can focus on your business.
             </p>
 
-            <h4 class="m-3">Custom Web Development</h4>
+            <h4 class="">Custom Web Development</h4>
             <p class="m-3 pb-3">
                 If you have a unique web development project that requires specialized expertise, I can help. From building custom web
                 applications to integrating third-party APIs and platforms, I have the skills and experience to deliver custom web
                 development solutions that meet your specific needs.
             </p>
         </div>
-         <img src="../static/Images/web-prices.svg" class="float-left col-md-6 col-lg-4" width="100%" alt="web development graphic">
-         <button class="btn btn-primary"><a href="#form"> Get Quote</a></button>
+         <img src="../static/Images/web-prices.svg" class="col-md-6 col-lg-4 image-fluid d-lg-block mx-auto" width="100%" alt="web development graphic">
+         <button class="btn btn-primary d-block mx-auto"><a href="#form"> Get Quote</a></button>
     </section>
     <!-- END WEB SERVICES -->
 
     <!-- MENTORING -->
     <h2 class="text-center mt-5">Mentoring</h2>
-    <section id="mentoring" class="info rounded text-center">
-        <img src="../static/Images/mentoring2.svg" class="float-left img-fluid col-md-6 p-0" width="100%" alt="a web development infographic">
+    <section id="mentoring" class="info text-center">
+        <img src="../static/Images/mentoring2.svg" class="img-fluid col-md-6 p-0" width="100%" alt="a web development infographic">
         
-        <div class="mentoring-info text-center float-left col-md-6">
+        <div class="mentoring-info text-center">
             <p class="m-3">
                 And if you're looking to level up your web development skills, I also offer personalized mentoring services.
                 With my years of experience and deep understanding of the latest web development trends, I can help you learn the
@@ -107,39 +108,26 @@
         </div>
     </section>
     <!-- END MENTORING -->
-
-    <!-- <h2 class="text-center m-2">Certificates</h2>
-
-    <section class="certs">
-        <div class="row">
-            <img class="col-6" src="../static/Images/udemy js.jpeg" width="100%" alt="">
-            <img class="col-6" src="../static/Images/Untitled design (2).png"  width="100%" alt="">
-            <img class="col-6" src="../static/Images/ibm-sert.jpeg" width="100%" alt="">
-            <img class="col-6" src="../static/Images/google-python-crash.jpeg" width="100%" alt="">
-        </div>
-    </section> -->
-    
     
     <section id="form" class="info">
         <h2 class="text-center m-3">Contact Me</h2>
 
-        <form class="text-center col-md-6 mx-auto p-3" action="">
-
-            <label for="name">Name</label>
-            <input class="form-control" type="text" id="name" placeholder="Name">
-
-            <label for="email">Email</label>
-            <input class="form-control" type="text" id="email" placeholder="Email">
-
-            <label for="message">Message</label>
-            <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+        <form class="text-center rounded col-md-6 p-3 mx-auto" action="mailto:recipient@example.com" method="post" enctype="text/plain">
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" class="form-control" name="subject"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" class="form-control" name="message"></textarea><br>
+            <input class="btn btn-primary m-3" type="submit" value="Send">
         </form>
+       
     </section>
+
+    {% endblock %}
 
     <footer class="text-center">
         <div>
             <a href="https://www.instagram.com/design_n_dev/"><img src="../static/Images/instagram-2016-5.svg" class="m-2" height="50px" width="50px" alt="instagram logo"></a>
-            <a href="https://www.fiverr.com/fourmarz"><img src="../static/Images/fiverr-1.svg" class="m-2h" eight="50px" width="50px" alt="fivver logo"></a>
+            <!-- <a href="https://www.fiverr.com/fourmarz"><img src="../static/Images/fiverr-1.svg" class="m-2h" eight="50px" width="50px" alt="fivver logo"></a> -->
         </div>
         <span>DesignNDev.com &copy; 2023</span>
     </footer>

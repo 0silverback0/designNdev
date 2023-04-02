@@ -9,6 +9,13 @@ body{
 
 :root{
     --dnd-blue: #0cc0df;
+    --dnd-grey: #58595b;
+}
+
+/* MODAL */
+
+.modal a:visited{
+    color: var(--dnd-blue);
 }
 
 /* HEADER */
@@ -18,11 +25,16 @@ header{
     width: 100%;
 }
 
-h1{
+h1 a{
     text-shadow: 0 0 10px white;
 	animation: strobe 2.5s infinite;
     color: white;
     font-size: 24px;
+}
+
+h1 a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 .hamburger{
@@ -31,6 +43,20 @@ h1{
 
 .hamburger-items{
     color: var(--dnd-blue);
+}
+
+/* HEADER ANIMATION */
+
+@keyframes strobe {
+    0% {
+        text-shadow: 0 0 10px white;
+    }
+    50% {
+        text-shadow: 0 0 20px var(--dnd-blue);
+    }
+    100% {
+        text-shadow: 0 0 10px white;
+    }
 }
 
 /* CALL TO ACTION */
@@ -57,7 +83,7 @@ h1{
 }
 
 .btn{
-    background-color: var(--dnd-blue);
+    background-color: var(--dnd-grey);
 }
 
 a{
@@ -69,22 +95,13 @@ a{
 } */
 
 h2{
-    color: #58595b;
+    color: var(--dnd-grey);
 }
 
-/* HEADER ANIMATION */
-
-@keyframes strobe {
-    0% {
-        text-shadow: 0 0 10px white;
-    }
-    50% {
-        text-shadow: 0 0 20px var(--dnd-blue);
-    }
-    100% {
-        text-shadow: 0 0 10px white;
-    }
+.about{
+    color: var(--dnd-blue)
 }
+
 
 /* FORM */
 
@@ -99,4 +116,11 @@ form label{
 
 footer{
     color: white;
+}
+
+
+/* PORTOFLIO */
+
+section{
+    color: var(--dnd-blue);
 }
