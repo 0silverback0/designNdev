@@ -1,10 +1,4 @@
-from flask import Flask, render_template, request, redirect
-
-# using SendGrid's Python Library
-# https://github.com/sendgrid/sendgrid-python
-import os
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+from flask import Flask, render_template
 
 app = Flask(__name__)
 

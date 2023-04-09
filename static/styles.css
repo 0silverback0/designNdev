@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: black !important;
 }
 
 .row{
@@ -20,16 +20,15 @@ body{
 
 /* HEADER */
 
-header{
-    background-color: black;
-    width: 100%;
-}
-
-h1 a{
+.navbar-brand{
     text-shadow: 0 0 10px white;
 	animation: strobe 2.5s infinite;
     color: white;
     font-size: 24px;
+}
+
+.nav-link{
+    color: var(--dnd-blue)
 }
 
 h1 a:hover{
@@ -37,12 +36,8 @@ h1 a:hover{
     text-decoration: none;
 }
 
-.hamburger{
-    color: white;
-}
-
-.hamburger-items{
-    color: var(--dnd-blue);
+.p-2{
+    margin: 0px;
 }
 
 /* HEADER ANIMATION */
@@ -59,6 +54,8 @@ h1 a:hover{
     }
 }
 
+/* END HEADER */
+
 /* CALL TO ACTION */
 
 #call-to-action{
@@ -66,36 +63,23 @@ h1 a:hover{
     color: white;
 }
 
-/* SECTION  1 */
+/* SECTION  */
 .info{
-    background-color: black;
+    /* background-color: ; */
     color: var(--dnd-blue);
-    /* height: 200px; */
     width: 100%;
 }
-
-/* .webdev-info{
-    color: var(--dnd-blue)
-} */
 
 .img-test{
     padding: 0;
 }
 
-.btn{
-    background-color: var(--dnd-grey);
-}
-
 a{
     text-decoration: none;
 }
-/* #services{
-    background-color: var(--dnd-blue);
-    width: 100%;
-} */
 
 h2{
-    color: var(--dnd-grey);
+    color: var(--dnd-grey)
 }
 
 .about{
@@ -116,6 +100,7 @@ form label{
 
 footer{
     color: white;
+    background-color: black;
 }
 
 
@@ -123,4 +108,17 @@ footer{
 
 section{
     color: var(--dnd-blue);
+}
+
+
+section{
+    background-color: black;
+}
+
+.main p{
+    color: var(--dnd-blue);
+}
+
+.bd{
+    background-color: black;
 }

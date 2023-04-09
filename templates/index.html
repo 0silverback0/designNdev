@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DesignNDev</title>
+    <title>Expert Freelance Web Developer | Custom Website Design &amp; Development | DesignNDev</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -12,37 +12,32 @@
 </head>
 <body>
 
-    <!-- MODAL -->
-    <div class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content bg-dark">
-            <div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+    <!-- NAV -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid" style="width: 100%;">
+              <div class="container">
+                <a class="navbar-brand" href="/">DesignNDev.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" style="color: white;"></span>
                 </button>
-            </div> 
-           <div class="hamburger-items ">
-               <ul class="text-center list-unstyled">
-                   <!-- <li>Blog</li> -->
-                   <li><a href="/portfolio"> Portoflio </a></li>
-                   <li><a href="/about"> About</a></li>
-                   <li></li>
-               </ul>
-           </div>
-          </div>
-        </div>
-      </div>
-    <!-- END MODAL -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/about">About</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
 
-    <header class="">
-        <h1 class="d-inline"><a href="/">DesignNDev.com</a> </h1>
-        <i class="m-2 hamburger fa-solid fa-bars float-right"></i>
-    </header>
+    <!-- END NAV -->
 
     {% block content %}
     <!-- CALL TO ACTION -->
-    <section  id="call-to-action" class="text-center mx-auto rounded">
-        <p class="m-3 p-2">
+    <section  id="call-to-action" class="text-center mx-auto">
+        <p class=" p-2">
             If you're a business owner with only a Facebook presence or a professional without a website, it's time to take action!
             Having a strong online presence is crucial for reaching your target audience and growing your business or professional
             network. Don't miss out on potential customers or opportunities by limiting yourself to just one platform. Take the next
@@ -53,13 +48,12 @@
     <!-- END CALL TO ACTION -->
 
     <!-- WEB SERVICES -->
-    <h2 class="text-center">Web Services</h2>
-
-    <section id="web-services" class="info text-center">
-
-        <img src="../static/Images/webservices.svg" class="col-md-6 image-fluid mx-auto"  width="100%" alt="web development graphic">
+    
+    <section id="" class="info text-center w-100">
+        <h2 class="text-center p-3">Web Services</h2>
+        <img src="../static/Images/webservices.svg" class="col-md-6 col-lg-4 image-fluid mx-auto"  width="100%" alt="web development graphic">
                 
-         <div class="dev-info d-md-float-right d-lg-inline">
+         <div class="d-md-float-right d-lg-inline">
             <h4 class="">Website Development</h4>
             <p class="m-4">
                 Using the latest web development technologies and best practices, I bring your website design to life with clean,
@@ -81,15 +75,15 @@
                 development solutions that meet your specific needs.
             </p>
         </div>
-         <img src="../static/Images/web-prices.svg" class="col-md-6 col-lg-4 image-fluid d-lg-block mx-auto" width="100%" alt="web development graphic">
-         <button class="btn btn-primary d-block mx-auto"><a href="#form"> Get Quote</a></button>
+         <img src="../static/Images/web-prices.svg" class="col-md-4 col-lg-3 image-fluid d-lg-block mx-auto" width="100%" alt="web development graphic">
     </section>
     <!-- END WEB SERVICES -->
 
     <!-- MENTORING -->
-    <h2 class="text-center mt-5">Mentoring</h2>
+    
     <section id="mentoring" class="info text-center">
-        <img src="../static/Images/mentoring2.svg" class="img-fluid col-md-6 p-0" width="100%" alt="a web development infographic">
+        <h2 class="text-center p-3">Mentoring</h2>
+        <img src="../static/Images/mentoring-4.svg" class="img-fluid col-md-6 col-lg-4 p-0" width="100%" alt="a web development infographic">
         
         <div class="mentoring-info text-center">
             <p class="m-3">
@@ -103,38 +97,39 @@
             </p>
         </div>
         <div>
-        <img src="../static/Images/webprices-2.svg" class="col-md-6  col-lg-4 img-fluid" width="100%" alt="">
-        <!-- <button class="btn btn-primary"><a href="#form">Get Started</a> </button> -->
+        <img src="../static/Images/webprices-2.svg" class="col-md-4 col-lg-3 img-fluid" width="100%" alt="">
         </div>
     </section>
     <!-- END MENTORING -->
     
     <section id="form" class="info">
-        <h2 class="text-center m-3">Contact Me</h2>
+        <h2 class="text-center p-3">Contact Me</h2>
 
-        <form class="text-center rounded col-md-6 p-3 mx-auto" action="mailto:recipient@example.com" method="post" enctype="text/plain">
-            <label for="subject">Subject:</label><br>
-            <input type="text" id="subject" class="form-control" name="subject"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" class="form-control" name="message"></textarea><br>
-            <input class="btn btn-primary m-3" type="submit" value="Send">
-        </form>
+      <form class="text-center rounded col-md-6 p-3 mx-auto" action="mailto:designnd@designndev.com" method="post">
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" class="form-control" name="email" required><br>
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" class="form-control" name="subject" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" class="form-control" name="message" required></textarea><br>
+        <input class="btn btn-primary m-3" type="submit" value="Send">
+      </form>
        
     </section>
 
     {% endblock %}
 
-    <footer class="text-center">
+    <footer class="text-center p-2">
         <div>
             <a href="https://www.instagram.com/design_n_dev/"><img src="../static/Images/instagram-2016-5.svg" class="m-2" height="50px" width="50px" alt="instagram logo"></a>
-            <!-- <a href="https://www.fiverr.com/fourmarz"><img src="../static/Images/fiverr-1.svg" class="m-2h" eight="50px" width="50px" alt="fivver logo"></a> -->
+            <a href="https://www.fiverr.com/fourmarz"><img src="../static/Images/fiverr-1.svg" class="m-2h" eight="50px" width="50px" alt="fivver logo"></a>
         </div>
         <span>DesignNDev.com &copy; 2023</span>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
     <script src="../static/app.js"></script>       
 </body>
 </html>
